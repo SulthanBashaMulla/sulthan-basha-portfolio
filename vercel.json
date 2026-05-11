@@ -1,8 +1,4 @@
 {
   "buildCommand": "vite build",
-  "outputDirectory": "dist/client",
-  "cleanUrls": true,
-  "rewrites": [
-    { "source": "/((?!assets/|.*\\..*).*)", "destination": "/index.html" }
-  ]
+  "cleanUrls": true
 }

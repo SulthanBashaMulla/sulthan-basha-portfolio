@@ -10,8 +10,6 @@ export default defineConfig({
     tailwindcss(),
     tanstackStart({
       target: "vercel",
-      spa: { enabled: true },
-      prerender: { enabled: true, crawlLinks: true },
     }),
     viteReact(),
   ],
