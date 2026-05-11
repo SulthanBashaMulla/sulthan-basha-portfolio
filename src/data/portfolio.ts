@@ -328,9 +328,9 @@ export const careerSteps: CareerStep[] = [
 ];
 
 export const stats = [
-  { value: "12+", label: "Projects" },
-  { value: "8+", label: "Certifications" },
-  { value: "5+", label: "Technologies" },
+  { value: "4+", label: "Projects" },
+  { value: "9+", label: "Certifications" },
+  { value: "7+", label: "Technologies" },
 ];
 
 export const navLinks = [
