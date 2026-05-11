@@ -29,10 +29,7 @@ export function About() {
             <Reveal>
               <div className="rounded-3xl bg-card border border-border p-8 md:p-10 shadow-[var(--shadow-soft)]">
                 <p className="text-foreground/80 leading-relaxed">
-                  Currently focused on the path from frontend into infrastructure: shipping
-                  small full-stack projects, automating my own workflows, and treating every
-                  repo as a chance to practice fundamentals. Long-term: cloud-native
-                  engineering, observability and platform work.
+                  Currently transitioning into DevOps by building projects, learning cloud technologies, automating workflows, and strengthening Linux, Git, and infrastructure fundamentals. Long-term focus: cloud-native engineering, CI/CD, observability, and scalable platform systems.
                 </p>
 
                 <div className="mt-10 grid sm:grid-cols-2 gap-4">

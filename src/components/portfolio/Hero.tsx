@@ -56,8 +56,7 @@ export function Hero() {
             transition={{ delay: 0.4, duration: 0.6 }}
             className="mt-8 max-w-md text-base md:text-lg text-foreground/75"
           >
-            DevOps & Full Stack learner — building systems, exploring cloud,
-            and documenting the journey.
+            DevOps Learner | Cloud Enthusiast — exploring Linux, Git, CI/CD, Docker, and scalable infrastructure.
           </motion.p>
 
           <motion.div
