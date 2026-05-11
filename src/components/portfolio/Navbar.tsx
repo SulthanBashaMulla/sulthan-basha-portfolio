@@ -29,7 +29,7 @@ export function Navbar() {
         {/* Left: logo mark + name */}
         <a href="#top" className="flex items-center leading-none group">
           <span className="text-lg md:text-xl font-medium tracking-tight text-foreground group-hover:text-foreground/80 transition-colors">
-            Sulthan Basha
+            Sulthan Basha Mulla
           </span>
         </a>
 
