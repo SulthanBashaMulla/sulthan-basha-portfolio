@@ -89,12 +89,12 @@ export function Hero() {
             initial={{ opacity: 0, scale: 1.04 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 1.1, ease: [0.22, 1, 0.36, 1] }}
-            className="relative h-[70vh] lg:h-full w-full overflow-hidden bg-muted"
+            className="relative h-[70vh] lg:h-full w-full overflow-hidden"
           >
             <img
               src={portraitImg}
               alt="Sulthan Basha portrait"
-              className="size-full object-cover grayscale contrast-[1.05]"
+              className="size-full object-cover grayscale contrast-[1.05] mix-blend-multiply"
               loading="eager"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-foreground/25 via-transparent to-transparent" />
