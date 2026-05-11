@@ -1,4 +1,8 @@
 {
   "buildCommand": "vite build",
-  "cleanUrls": true
+  "outputDirectory": "dist",
+  "cleanUrls": true,
+  "rewrites": [
+    { "source": "/(.*)", "destination": "/index.html" }
+  ]
 }
