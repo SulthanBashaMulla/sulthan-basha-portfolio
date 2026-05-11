@@ -1,4 +1,4 @@
-import portraitImg from "@/assets/portrait.jpg";
+import portraitImg from "@/assets/portrait.png";
 import collegeImg from "@/assets/project-college.jpg";
 import devopsImg from "@/assets/project-devops.jpg";
 import attendanceImg from "@/assets/project-attendance.jpg";
