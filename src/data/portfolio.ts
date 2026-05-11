@@ -176,16 +176,56 @@ export const certifications: Certification[] = [
   },
 ];
 
-export const learningMilestones = [
+export type LearningItem = {
+  title: string;
+  note: string;
+  status?: "done" | "in-progress" | "planned";
+};
+
+export type LearningGroup = {
+  year: string;
+  label?: string;
+  items: LearningItem[];
+};
+
+export const learningMilestones: LearningGroup[] = [
   {
     year: "2025",
+    label: "Foundations",
     items: [
-      { title: "Git Basics", note: "Branching, merging, rebase fundamentals." },
-      { title: "GitHub Collaboration", note: "Pull requests, reviews, issues." },
-      { title: "Linux Fundamentals", note: "Filesystem, permissions, processes." },
-      { title: "Shell Scripting", note: "Bash automation and cron." },
-      { title: "Docker Basics", note: "Images, containers, compose." },
-      { title: "AWS Cloud Basics", note: "EC2, S3, IAM essentials." },
+      { title: "Git Basics", note: "Branching, merging, rebase fundamentals.", status: "done" },
+      { title: "GitHub Collaboration", note: "Pull requests, reviews, issues.", status: "done" },
+      { title: "Linux Fundamentals", note: "Filesystem, permissions, processes.", status: "done" },
+      { title: "Shell Scripting", note: "Bash automation and cron.", status: "in-progress" },
+      { title: "Docker Basics", note: "Images, containers, compose.", status: "in-progress" },
+      { title: "AWS Cloud Basics", note: "EC2, S3, IAM essentials.", status: "planned" },
+    ],
+  },
+  {
+    year: "2026",
+    label: "Cloud & Automation",
+    items: [
+      { title: "CI/CD Pipelines", note: "GitHub Actions, build & deploy workflows.", status: "planned" },
+      { title: "Infrastructure as Code", note: "Terraform basics on AWS.", status: "planned" },
+      { title: "Kubernetes Fundamentals", note: "Pods, deployments, services.", status: "planned" },
+      { title: "Monitoring & Logging", note: "Prometheus, Grafana, ELK.", status: "planned" },
+    ],
+  },
+  {
+    year: "2027",
+    label: "Scale & Reliability",
+    items: [
+      { title: "Advanced Kubernetes", note: "Helm, operators, autoscaling.", status: "planned" },
+      { title: "Cloud Security", note: "IAM, secrets, network policies.", status: "planned" },
+      { title: "Site Reliability Engineering", note: "SLOs, error budgets, on-call.", status: "planned" },
+    ],
+  },
+  {
+    year: "2028+",
+    label: "Mastery",
+    items: [
+      { title: "Platform Engineering", note: "Internal developer platforms.", status: "planned" },
+      { title: "Multi-cloud Architecture", note: "Designing resilient cross-cloud systems.", status: "planned" },
     ],
   },
 ];
