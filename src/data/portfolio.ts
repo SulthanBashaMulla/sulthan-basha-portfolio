@@ -138,6 +138,15 @@ export type Certification = {
 
 export const certifications: Certification[] = [
   {
+    id: "linux-linux-administration",
+    title: "Linux Unhatched",
+    org: "Cisco Networking Academy | NDG",
+    credentialId: "35a07a9f-8976-4ad6-b9b2-d98ff5b37ecb",
+    issued: "May 2026",
+    verifyUrl: "https://www.credly.com/earner/earned/badge/35a07a9f-8976-4ad6-b9b2-d98ff5b37ecb",
+    image: "https://i.postimg.cc/PJR3Z4PZ/Cisco-linux-Cert.jpg",
+  },
+  {
     id: "git-github",
     title: "Git & GitHub Course - Master Version Control",
     org: "ScholarHat",
