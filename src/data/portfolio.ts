@@ -190,16 +190,57 @@ export const learningMilestones = [
   },
 ];
 
-export const careerSteps = [
-  "Student",
-  "Frontend Development",
-  "Git & GitHub",
-  "Linux",
-  "Docker",
-  "AWS",
-  "CI/CD",
-  "Kubernetes",
-  "DevOps Engineer",
+export type CareerStep = {
+  years: string;
+  role: string;
+  org: string;
+  phase: "past" | "present" | "future";
+  description: string;
+};
+
+export const careerSteps: CareerStep[] = [
+  {
+    years: "2022 — 2024",
+    role: "Student · Intermediate (MPC)",
+    org: "Junior College",
+    phase: "past",
+    description: "Built the foundation — maths, physics, and the curiosity that led me to code.",
+  },
+  {
+    years: "2024 — 2025",
+    role: "CS Undergraduate · Frontend Learner",
+    org: "B.Tech, Computer Science",
+    phase: "past",
+    description: "Picked up HTML, CSS, JavaScript and React. Shipped my first small projects.",
+  },
+  {
+    years: "2025 — 2026",
+    role: "Full Stack & DevOps Learner",
+    org: "Self-taught · Open Source",
+    phase: "present",
+    description: "Currently here — learning Git, Linux, Docker, AWS and CI/CD while building real projects.",
+  },
+  {
+    years: "2026 — 2027",
+    role: "Junior DevOps / Cloud Intern",
+    org: "Target: Cloud-native startup",
+    phase: "future",
+    description: "Internship role — own pipelines, write IaC, and ship containers to production.",
+  },
+  {
+    years: "2027 — 2029",
+    role: "DevOps Engineer",
+    org: "Target: Product company",
+    phase: "future",
+    description: "Kubernetes, observability, and platform engineering at scale.",
+  },
+  {
+    years: "2029 +",
+    role: "Senior DevOps / SRE",
+    org: "Long-term goal",
+    phase: "future",
+    description: "Designing reliable, secure cloud platforms and mentoring the next batch.",
+  },
 ];
 
 export const stats = [
