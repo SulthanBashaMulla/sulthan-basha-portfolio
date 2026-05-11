@@ -8,7 +8,11 @@ export default defineConfig({
   plugins: [
     tsConfigPaths(),
     tailwindcss(),
-    tanstackStart({ target: "vercel" }),
+    tanstackStart({
+      target: "vercel",
+      spa: { enabled: true },
+      prerender: { enabled: true, crawlLinks: true },
+    }),
     viteReact(),
   ],
 });
