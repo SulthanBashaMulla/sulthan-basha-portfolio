@@ -27,15 +27,9 @@ export function Navbar() {
     >
       <div className="mx-auto max-w-7xl px-6 md:px-10 h-16 md:h-20 flex items-center justify-between">
         {/* Left: logo mark + name */}
-        <a href="#top" className="flex items-center gap-3 group">
-          <span className="relative inline-flex size-9 items-center justify-center rounded-full bg-foreground text-background text-sm tracking-tight">
-            <span className="font-medium">SB</span>
-          </span>
-          <span className="hidden sm:flex flex-col leading-tight">
-            <span className="text-sm font-medium tracking-tight">Sulthan Basha</span>
-            <span className="text-[10px] uppercase tracking-[0.25em] text-muted-foreground">
-              Portfolio
-            </span>
+        <a href="#top" className="flex items-center leading-none group">
+          <span className="text-lg md:text-xl font-medium tracking-tight text-foreground group-hover:text-foreground/80 transition-colors">
+            Sulthan Basha
           </span>
         </a>
 
