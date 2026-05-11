@@ -17,7 +17,7 @@ export function Navbar() {
 
   return (
     <motion.header
-      initial={{ y: -24, opacity: 0 }}
+      initial={{ y: -16, opacity: 0 }}
       animate={{ y: 0, opacity: 1 }}
       transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1] }}
       className={cn(
@@ -26,22 +26,33 @@ export function Navbar() {
       )}
     >
       <div className="mx-auto max-w-7xl px-6 md:px-10 h-16 md:h-20 flex items-center justify-between">
-        <a href="#top" className="font-display text-xl md:text-2xl tracking-tight">
-          Sulthan<span className="text-muted-foreground">.</span>
+        {/* Left: logo mark + name */}
+        <a href="#top" className="flex items-center gap-3 group">
+          <span className="relative inline-flex size-9 items-center justify-center rounded-full bg-foreground text-background text-sm tracking-tight">
+            <span className="font-medium">SB</span>
+          </span>
+          <span className="hidden sm:flex flex-col leading-tight">
+            <span className="text-sm font-medium tracking-tight">Sulthan Basha</span>
+            <span className="text-[10px] uppercase tracking-[0.25em] text-muted-foreground">
+              Portfolio
+            </span>
+          </span>
         </a>
 
-        <nav className="hidden md:flex items-center gap-8">
+        {/* Center nav */}
+        <nav className="hidden md:flex absolute left-1/2 -translate-x-1/2 items-center gap-1 rounded-full border border-border/70 bg-background/60 backdrop-blur px-2 py-1.5">
           {navLinks.map((l) => (
             <a
               key={l.href}
               href={l.href}
-              className="text-sm text-foreground/80 hover:text-foreground transition-colors relative after:absolute after:left-0 after:-bottom-1 after:h-px after:w-0 after:bg-foreground after:transition-all hover:after:w-full"
+              className="px-4 py-1.5 text-sm text-foreground/75 hover:text-foreground rounded-full hover:bg-foreground/5 transition-colors"
             >
               {l.label}
             </a>
           ))}
         </nav>
 
+        {/* Right CTA */}
         <a
           href="#contact"
           className="hidden md:inline-flex items-center justify-center rounded-full bg-foreground text-background px-5 py-2 text-sm hover:bg-foreground/90 transition-colors"
