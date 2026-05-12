@@ -61,7 +61,7 @@ export const projects: Project[] = [
     "SEO optimization with sitemap and robots configuration",
     "Responsive layout for desktop and mobile devices",
     "Structured navigation for student accessibility",
-    "Production deployment using Vercel"
+    "Production deployment using Render"
   ],
 
   challenges: [
@@ -139,9 +139,9 @@ export const projects: Project[] = [
 
   docs: "#",
 
-  github: "https://github.com/sulthanbasha",
+  github: "https://github.com/SulthanBashaMulla/PWA-NDC",
 
-  live: "#",
+  live: "https://pwa-ndc.vercel.app",
 },
   
 ];
