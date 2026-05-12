@@ -25,105 +25,125 @@ export type Project = {
 
 export const projects: Project[] = [
   {
-    id: "college-pwa",
-    title: "College Management PWA",
-    short: "An offline-first PWA for campus operations and student services.",
-    description:
-      "A progressive web app built to centralize college workflows — attendance, timetables, announcements and student profiles — with offline support and instant install.",
-    tech: ["React", "Vite", "Tailwind", "PWA", "IndexedDB"],
-    image: collegeImg,
-    screenshots: [collegeImg, attendanceImg, devopsImg],
-    features: [
-      "Offline-first with service workers",
-      "Role-based dashboards for students and staff",
-      "Realtime announcement feed",
-      "Installable on mobile and desktop",
-    ],
-    challenges: [
-      "Designing a cache strategy that survives flaky campus Wi-Fi",
-      "Synchronising local state with the server without conflicts",
-    ],
-    architecture:
-      "React SPA shell + Workbox service worker. IndexedDB for local persistence with a background sync queue posting to a REST API.",
-    docs: "#",
-    github: "https://github.com/sulthanbasha",
-    live: "#",
-  },
+  id: "ndc-college-website",
+
+  title: "NDC College Website",
+
+  short:
+    "Designed and deployed the first official digital presence for my college using modern frontend and deployment practices.",
+
+  description:
+    "Built and deployed a complete multi-page website for my college, which previously had no official online platform. The project was developed to improve accessibility to academic information, departmental resources, admissions details, notifications, facilities, placements, and campus updates for students and faculty. This project became an important milestone in my DevOps learning journey by introducing me to real-world deployment workflows, production hosting, project structure management, performance optimization, and maintaining scalable web infrastructure.",
+
+  tech: [
+    "HTML",
+    "CSS",
+    "JavaScript",
+    "Render",
+    "Git",
+    "GitHub"
+  ],
+
+  image: "https://i.postimg.cc/B68fmhfw/ndc-website-ss.jpg",
+
+  screenshots: [
+    "https://i.postimg.cc/B68fmhfw/ndc-website-ss.jpg",
+    "https://i.postimg.cc/0Q61Vt1X/ndc-website-ss2.jpg",
+    "https://i.postimg.cc/0Q61Vt1t/ndc-website-ss3.jpg",
+    "https://i.postimg.cc/XJZ6s26H/ndc-website-ss4.jpg"
+  ],
+
+  features: [
+    "Complete multi-page college website",
+    "Department and academic information pages",
+    "Admissions and circular management sections",
+    "Placement and facilities showcase",
+    "SEO optimization with sitemap and robots configuration",
+    "Responsive layout for desktop and mobile devices",
+    "Structured navigation for student accessibility",
+    "Production deployment using Vercel"
+  ],
+
+  challenges: [
+    "Creating a complete institutional website from scratch for a college without an existing online presence",
+    "Organizing large amounts of academic and campus information into a scalable structure",
+    "Ensuring responsive behavior across devices",
+    "Managing deployment configuration and production hosting workflows"
+  ],
+
+  architecture:
+    "The project follows a modular static website architecture using reusable HTML structures, centralized styling, and organized asset management. Deployment was handled through Vercel with optimized public assets, SEO configuration, and scalable page hierarchy for future expansion.",
+
+  docs: "#",
+
+  github: "https://github.com/SulthanBashaMulla/NDC-website",
+
+  live: "https://ndcndl.org/",
+},
   {
-    id: "devops-tracker",
-    title: "DevOps Learning Tracker",
-    short: "A personal kanban for tracking the DevOps learning roadmap.",
-    description:
-      "A focused tool to plan, track and reflect on the DevOps journey — from Linux fundamentals to Kubernetes — with daily notes, streaks and resource links.",
-    tech: ["React", "TypeScript", "Tailwind", "LocalStorage"],
-    image: devopsImg,
-    screenshots: [devopsImg, portfolioImg, collegeImg],
-    features: [
-      "Drag-and-drop kanban for topics",
-      "Daily streaks and reflection journal",
-      "Resource library per topic",
-      "Exportable progress report",
-    ],
-    challenges: [
-      "Modelling open-ended learning as discrete trackable units",
-      "Keeping the UI calm despite rich data",
-    ],
-    architecture:
-      "Client-only React app. State persisted in localStorage with a versioned schema and migration helpers.",
-    docs: "#",
-    github: "https://github.com/sulthanbasha",
-    live: "#",
-  },
-  {
-    id: "attendance-dashboard",
-    title: "Student Attendance Dashboard",
-    short: "An analytics dashboard summarizing attendance across cohorts.",
-    description:
-      "A data-rich dashboard that turns raw attendance records into insight — trends, at-risk students, and exportable reports for faculty.",
-    tech: ["React", "Recharts", "Tailwind", "Node.js"],
-    image: attendanceImg,
-    screenshots: [attendanceImg, collegeImg, devopsImg],
-    features: [
-      "Cohort-level KPIs and trends",
-      "At-risk student detection",
-      "CSV export and printable reports",
-      "Mobile-friendly tables",
-    ],
-    challenges: [
-      "Rendering thousands of rows without jank",
-      "Designing charts that read well in print",
-    ],
-    architecture:
-      "Node API aggregating attendance into materialized summaries; React frontend with Recharts and virtualized tables.",
-    docs: "#",
-    github: "https://github.com/sulthanbasha",
-    live: "#",
-  },
-  {
-    id: "portfolio",
-    title: "Portfolio Website",
-    short: "This site — an editorial, animated personal portfolio.",
-    description:
-      "A frontend-only portfolio built with TanStack Start, Tailwind and Framer Motion. Editorial layout, large typography and quiet animation.",
-    tech: ["TanStack Start", "React", "Tailwind", "Framer Motion"],
-    image: portfolioImg,
-    screenshots: [portfolioImg, devopsImg, collegeImg],
-    features: [
-      "Section-by-section scroll reveals",
-      "Glassmorphic sticky navbar",
-      "Animated learning and career trees",
-      "Fully responsive editorial layout",
-    ],
-    challenges: [
-      "Balancing motion with calm, premium feel",
-      "Designing trees that feel alive but legible",
-    ],
-    architecture:
-      "Static frontend with TanStack Start. Local data, no backend. Motion via Framer Motion with viewport-driven reveals.",
-    docs: "#",
-    github: "https://github.com/sulthanbasha",
-    live: "#",
-  },
+  id: "ndc-student-pwa",
+
+  title: "NDC Student Management PWA",
+
+  short:
+    "A centralized progressive web application built to simplify academic communication and student services within the college.",
+
+  description:
+    "Designed and developed a student-focused progressive web application to modernize how academic information is shared and accessed inside the college. Previously, attendance updates, timetables, notices, marks, and circulars were distributed through fragmented communication channels such as WhatsApp groups and manual sharing. This platform was built to create a faster, structured, and more accessible digital experience for both students and faculty.The application uses student roll numbers as unique identifiers to manage authentication logic, personalized dashboards, and role-based data access. Firebase Firestore was integrated to handle realtime academic data, while Vercel was used for deployment and production hosting.This PWA can be installable on to the HomeScreen. The project also reflects my growing DevOps learning path by introducing practical experience in deployment workflows, frontend architecture, cloud-based services, environment configuration, and scalable project organization.The interface and user experience were accelerated through AI-assisted prototyping workflows, allowing rapid iteration while maintaining full control over project structure, customization, deployment, and implementation decisions.",
+
+  tech: [
+    "React",
+    "TypeScript",
+    "Tailwind CSS",
+    "Firebase",
+    "Firestore",
+    "PWA",
+    "Vercel",
+    "Git",
+    "GitHub"
+  ],
+
+  image:
+    "https://i.postimg.cc/RFR4YgPk/pwa1.jpg",
+
+  screenshots: [
+    "https://i.postimg.cc/sXcsLTn8/pwa2.jpg",
+    "https://i.postimg.cc/G2QdfXMV/pwa3.png",
+    "https://i.postimg.cc/Qtbhzf66/pwa4.png",
+    "https://i.postimg.cc/PJ5Tn1c3/pwa5.png",
+    "https://i.postimg.cc/4yxsRpMr/pwa6.png",
+  ],
+
+  features: [
+    "Student-specific access using roll number identification",
+    "Role-based academic data visibility",
+    "Attendance and internal marks tracking",
+    "Realtime notices and circular updates",
+    "Timetable access for students and lecturers",
+    "Installable progressive web application experience",
+    "Responsive UI optimized for mobile and desktop devices",
+    "Cloud-hosted realtime data management using Firebase",
+    "Production deployment through Vercel"
+  ],
+
+  challenges: [
+    "Replacing scattered communication workflows with a centralized digital platform",
+    "Designing structured access control using student roll numbers",
+    "Managing secure academic data visibility for multiple user roles",
+    "Optimizing realtime frontend updates with Firebase integration",
+    "Creating a responsive interface accessible across different devices"
+  ],
+
+  architecture:
+    "The platform follows a modular React and TypeScript frontend architecture with reusable components and scalable UI patterns built using Tailwind CSS. Firebase Firestore powers realtime cloud-based data storage and structured access management, while Vercel handles deployment, hosting, and frontend delivery. The project structure was organized for maintainability, scalability, and future feature expansion.",
+
+  docs: "#",
+
+  github: "https://github.com/sulthanbasha",
+
+  live: "#",
+},
+  
 ];
 
 export type Certification = {
