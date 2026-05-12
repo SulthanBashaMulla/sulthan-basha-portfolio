@@ -3,6 +3,7 @@ import { Navbar } from "@/components/portfolio/Navbar";
 import { Hero } from "@/components/portfolio/Hero";
 import { About } from "@/components/portfolio/About";
 import { Projects } from "@/components/portfolio/Projects";
+import { Skills } from "@/components/portfolio/Skills";
 import { Certifications } from "@/components/portfolio/Certifications";
 import { LearningTree } from "@/components/portfolio/LearningTree";
 import { CareerTree } from "@/components/portfolio/CareerTree";
@@ -38,6 +39,7 @@ function Index() {
       <About />
       <Projects />
       <Certifications />
+      <Skills />
       <LearningTree />
       <CareerTree />
       <Contact />
