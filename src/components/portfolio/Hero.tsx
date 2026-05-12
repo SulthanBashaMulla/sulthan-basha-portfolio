@@ -13,7 +13,7 @@ export function Hero() {
         <div className="lg:col-span-7 px-6 md:px-12 lg:px-16 pt-6 lg:pt-24 pb-16 flex flex-col">
           {/* Top meta row */}
           <div className="flex items-center justify-between text-xs uppercase tracking-[0.3em] text-muted-foreground mb-12 lg:mb-20">
-            <span>Portfolio © 2025</span>
+            <span>Portfolio © 2026</span>
             <span className="hidden md:inline">Based in India</span>
           </div>
 

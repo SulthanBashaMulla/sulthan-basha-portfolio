@@ -2,9 +2,9 @@ import { Mail, Linkedin, Github, Download, ArrowUpRight } from "lucide-react";
 import { Reveal } from "./Reveal";
 
 const links = [
-  { icon: Mail, label: "Email", value: "sulthan@example.com", href: "mailto:sulthan@example.com" },
-  { icon: Linkedin, label: "LinkedIn", value: "/in/sulthanbasha", href: "https://linkedin.com" },
-  { icon: Github, label: "GitHub", value: "@sulthanbasha", href: "https://github.com" },
+  { icon: Mail, label: "Email", value: "mullasulthanbasha@gmail.com", href: "mailto: mullasulthanbasha@gmail.com" },
+  { icon: Linkedin, label: "LinkedIn", value: "Sulthan Basha Mulla", href: "https://www.linkedin.com/in/sulthan-basha-mulla-4450423a3/" },
+  { icon: Github, label: "GitHub", value: "@SulthanBashaMulla", href: "https://github.com/SulthanBashaMulla" },
 ];
 
 export function Contact() {
