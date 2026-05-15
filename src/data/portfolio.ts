@@ -311,11 +311,18 @@ export const careerSteps: CareerStep[] = [
     description: "Built the foundation — maths, physics, and the curiosity that led me to code.",
   },
   {
-    years: "2024 — 2025",
-    role: "CS Undergraduate · Frontend Learner",
-    org: "B.Tech, Computer Science",
-    phase: "past",
+    years: "2024 — 2027",
+    role: "Student · Graduation",
+    org: "NDC-Nandyal, Computer Science",
+    phase: "present",
     description: "Picked up HTML, CSS, JavaScript and React. Shipped my first small projects.",
+  },
+  {
+    years:"2025",
+    role:"Founder",
+    org:"Wybzite 🧭•",
+    phase:"past",
+    description:"A small level startup that present Online to make the people's and Businesses online through Creating websites which Resembles their Brand."
   },
   {
     years: "2025 — 2026",
@@ -327,7 +334,7 @@ export const careerSteps: CareerStep[] = [
   {
     years: "2026 — 2027",
     role: "Junior DevOps / Cloud Intern",
-    org: "Target: Cloud-native startup",
+    org: "Target: Cloud-native MNC's , startup's",
     phase: "future",
     description: "Internship role — own pipelines, write IaC, and ship containers to production.",
   },
@@ -358,7 +365,7 @@ export const navLinks = [
   { href: "#projects", label: "Projects" },
   { href: "#certifications", label: "Certifications" },
   { href: "#skills", label: "Skills" },
-  { href: "#learning", label: "Learning Tree" },
-  { href: "#career", label: "Career Tree" },
+  { href: "#learning", label: "Learning" },
+  { href: "#career", label: "Career" },
   { href: "#contact", label: "Contact" },
 ];
