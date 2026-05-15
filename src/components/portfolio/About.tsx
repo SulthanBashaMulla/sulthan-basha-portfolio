@@ -5,11 +5,11 @@ import { Reveal } from "./Reveal";
 
 const skills = [
   { icon: Terminal, name: "Linux", note: "Shell, permissions, processes" },
-{ icon: GitBranch, name: "Git & GitHub", note: "Branching, PRs, reviews" },
-{ icon: Container, name: "Docker", note: "Images, compose, networks" },
-{ icon: Cloud, name: "AWS", note: "EC2, S3, IAM basics" },
-{ icon: Boxes, name: "Kubernetes", note: "Pods, deployments, scaling" },
-{ icon: Wrench, name: "Terraform", note: "Infrastructure as code" },
+  { icon: GitBranch, name: "Git & GitHub", note: "Branching, PRs, reviews" },
+  { icon: Container, name: "Docker", note: "Images, compose, networks" },
+  { icon: Cloud, name: "AWS", note: "EC2, S3, IAM basics" },
+  { icon: Atom, name: "React", note: "Hooks, state, routing" },
+  { icon: Server, name: "Node.js", note: "APIs, npm, tooling" },
 ];
 
 export function About() {
