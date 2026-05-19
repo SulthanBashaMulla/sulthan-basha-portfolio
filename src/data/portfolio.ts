@@ -158,6 +158,15 @@ export type Certification = {
 
 export const certifications: Certification[] = [
   {
+    id: "linux-Terminal",
+    title: "Terminal Fundamentals",
+    org: "Coddy",
+    credentialId: "lfPbhR-terminal-JRk84c",
+    issued: "May 2026",
+    verifyUrl: "https://coddy.tech/certifications/lfPbhR-terminal-JRk84c",
+    image: "https://i.postimg.cc/PJR3Z4PZ/Cisco-linux-Cert.jpg",
+  },
+  {
     id: "linux-linux-administration",
     title: "Linux Unhatched",
     org: "Cisco Networking Academy | NDG",
