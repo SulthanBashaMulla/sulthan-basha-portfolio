@@ -164,7 +164,7 @@ export const certifications: Certification[] = [
     credentialId: "lfPbhR-terminal-JRk84c",
     issued: "May 2026",
     verifyUrl: "https://coddy.tech/certifications/lfPbhR-terminal-JRk84c",
-    image: "https://i.postimg.cc/PJR3Z4PZ/Cisco-linux-Cert.jpg",
+    image: "https://i.postimg.cc/qqsPjKwz/Coddy-terminal-cert.jpg",
   },
   {
     id: "linux-linux-administration",
