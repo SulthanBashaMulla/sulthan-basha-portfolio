@@ -365,7 +365,7 @@ export const careerSteps: CareerStep[] = [
 
 export const stats = [
   { value: "2+", label: "Projects" },
-  { value: "9+", label: "Certifications" },
+  { value: "10+", label: "Certifications" },
   { value: "7+", label: "Technologies" },
 ];
 
